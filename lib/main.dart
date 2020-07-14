@@ -4,16 +4,23 @@ import 'dart:math';
 void main() {
   return runApp(
     MaterialApp(
-      home: Scaffold(
-        backgroundColor: Colors.red,
-        appBar: AppBar(
-          title: Text('Dicee'),
-          backgroundColor: Colors.red,
-        ),
-        body: DicePage(),
-      ),
+      home: DiceHome(),
     ),
   );
+}
+
+class DiceHome extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.red,
+      appBar: AppBar(
+        title: Text('Dicee'),
+        backgroundColor: Colors.red,
+      ),
+      body: DicePage(),
+    );
+  }
 }
 
 class DicePage extends StatefulWidget {
